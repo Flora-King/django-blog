@@ -35,7 +35,7 @@ DEBUG = False
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
-ALLOWED_HOSTS = ['8000-floraking-djangoblog-96cz72ky8uq.ws-eu104.gitpod.io' 'localhost']
+ALLOWED_HOSTS = ['8000-floraking-djangoblog-96cz72ky8uq.ws-eu104.gitpod.io', 'localhost']
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
