@@ -29,7 +29,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+
+DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = ['8000-floraking-djangoblog-ghz3hromoex.ws-eu104.gitpod.io', 'localhost']
 
@@ -51,6 +53,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'django_summernote',
+    'crispy_forms',
     'blog',
 ]
 
@@ -58,6 +61,8 @@ SITE_ID = 1
 
 LOGIN_REFIRECT_URL = '/'
 LOGOUT_REFIRECT_URL = '/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
