@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-floraking-djangoblog-o0dzdpmme0v.ws-eu104.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['8000-floraking-djangoblog-ghz3hromoex.ws-eu104.gitpod.io', 'localhost']
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
@@ -67,6 +67,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'codestar.urls'
